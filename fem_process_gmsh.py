@@ -20,8 +20,6 @@ from typing import Dict, List, Tuple, Set, Any
 # 12. info_elements에서 info_BC의 각 BC의 entity 차원 및 Tag에 대응되는 element들 찾아서 걔네들의 node Tag만 따로 뺀 다음 중복 Tag는 하나만 담게 하여(unique filtering) info_BC의 대응되는 BC 줄의 우측에 추가
 # 13. info_nodes라는 변수에서 nodes의 index, 글로벌 좌표만 나래비로 뽑아서 data_nodes라는 변수로 지정
 # 14. info_elements라는 변수에서 elements의 type, index, 가지고 있는 node의 index만 나래비로 뽑아서 data_elements라는 변수로 지정
-# 
-# 이 모든 걸 구현하는 코드 짜줘.
 
 # %%
 # ----------------------------
@@ -496,4 +494,5 @@ def run_pipeline(path_msh: str) -> Dict[str, Any]:
 # ----------------------------
 if __name__ == "__main__":
     path = "C:\\Users\\opew4\\Desktop\\Files_FreeCAD\\square_hex.msh"  # 네 파일 경로
+
     out = run_pipeline(path)
